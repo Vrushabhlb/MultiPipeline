@@ -3,6 +3,6 @@ node('built-in') {
     git 'https://github.com/vrushabh583/hello-word'
 }
 stage('Continuous Build_master') {
-    sh 'mvn package'
+    sh label: ' ', script: 'mvn package'
 }
 }
